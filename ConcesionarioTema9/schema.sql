@@ -18,6 +18,7 @@ drop database if exists concesionario;
                 fabricante VARCHAR(50),
                 anio INT,
                 km INT,
+                matricula VARCHAR(8),
                 CONSTRAINT PK_coche PRIMARY KEY (id)
             );
             
@@ -25,7 +26,7 @@ drop database if exists concesionario;
                 id INT auto_increment,
                 id_cliente INT,
                 Id_coche INT,
-                anio_de_compra INT,
+                fecha_de_compra DATE,
                 CONSTRAINT PK_ventas PRIMARY KEY (id,id_cliente,id_coche),
                 CONSTRAINT FK_clienteventas FOREIGN KEY (id_cliente) REFERENCES cliente (id),
                 CONSTRAINT FK_cocheventas FOREIGN KEY (id_coche) REFERENCES coche (id)

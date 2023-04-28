@@ -19,20 +19,20 @@ INSERT INTO cliente (nombre,apellidouno,apellidodos,email) VALUES ("Ibrahim","Ra
             ("Blythe","Ruscoe","Shakle","bshaklei@thetimes.co.uk"),
             ("Lanni","Richardsson","McCamish","lmccamishj@ox.ac.uk");
             
-            INSERT INTO coche (modelo,precio,fabricante,anio,km) VALUES ("Clio",14000,"Renault",2006,200000),
-            ("Astra",13000,"Opel",2022,3000),
-            ("Megane",17000,"Renault",2014,3000),
-            ("Insignia",1500,"Opel",2006,30000),
-            ("Traffic",22000,"Renault",2022,1000),
-            ("Vivaro",22000,"Opel",2023,0),
-            ("tucson",14000,"hyundai",20021,4000),
-            ("xc40",14000,"Volvo",20020,50000),
-            ("kona",7000,"hyundai",20010,2000),
-            ("xc60",17000,"Volvo",20022,0),
-            ("bayon",2000,"hyundai",2008,350000);
+            INSERT INTO coche (modelo,precio,fabricante,anio,km,matricula) VALUES ("Clio",14000,"Renault",2006,200000,"1245XCV"),
+            ("Astra",13000,"Opel",2022,3000,"7894DFG"),
+            ("Megane",17000,"Renault",2014,3000,"4569TYU"),
+            ("Insignia",1500,"Opel",2006,30000,"6541WER"),
+            ("Traffic",22000,"Renault",2022,1000,"3215LKJ"),
+            ("Vivaro",22000,"Opel",2023,0,"9874RTY"),
+            ("tucson",14000,"hyundai",2021,4000,"9512HGF"),
+            ("xc40",14000,"Volvo",2020,50000,"8523UNJ"),
+            ("kona",7000,"hyundai",2010,2000,"7531PAM"),
+            ("xc60",17000,"Volvo",2022,0,"8564OMA"),
+            ("bayon",2000,"hyundai",2008,350000,"6491PQN");
             
-            INSERT INTO ventas (id_cliente,id_coche,anio_de_compra) VALUES (1,3,2017),
-            (7,6,2020),
-            (9,2,2015),
-            (15,8,2022),
-            (7,7,2021);
+            INSERT INTO ventas (id_cliente,id_coche,fecha_de_compra) VALUES (1,3,'2017-01-28'),
+            (7,6,'2022-05-10'),
+            (9,2,'2015-03-20'),
+            (15,8,'2020-05-03'),
+            (7,7,'2021-08-1');
