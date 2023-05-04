@@ -24,9 +24,9 @@ drop database if exists concesionario;
             
              CREATE TABLE ventas(
                 id INT auto_increment,
-                id_cliente INT,
-                Id_coche INT,
-                fecha_de_compra DATE,
+                id_cliente INT not null,
+                Id_coche INT not null,
+                fecha_de_compra DATE not null,
                 CONSTRAINT PK_ventas PRIMARY KEY (id,id_cliente,id_coche),
                 CONSTRAINT FK_clienteventas FOREIGN KEY (id_cliente) REFERENCES cliente (id),
                 CONSTRAINT FK_cocheventas FOREIGN KEY (id_coche) REFERENCES coche (id)
