@@ -1,6 +1,6 @@
 drop database if exists concesionario;
-            create database concesionario;
-            use concesionario;
+create database concesionario;
+use concesionario;
 
             CREATE TABLE cliente(
                 id INT auto_increment,
