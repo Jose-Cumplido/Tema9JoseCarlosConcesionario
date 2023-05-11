@@ -7,11 +7,11 @@ import org.eclipse.jdt.annotation.NonNull;
  * @author cumpli
  * @version 1.0
  */
-public class ColumOrder {
+public class ColumnOrder {
 	private int index;
 	private String orden;
 
-	public ColumOrder(@NonNull int index, String orden) {
+	public ColumnOrder(@NonNull int index, String orden) {
 		this.index = index;
 		this.orden = orden;
 	}

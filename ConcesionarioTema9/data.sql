@@ -31,7 +31,7 @@ INSERT INTO cliente (nombre,apellidouno,apellidodos,email) VALUES ("Ibrahim","Ra
             ("xc60",17000,"Volvo",2022,0,"8564OMA"),
             ("bayon",2000,"hyundai",2008,350000,"6491PQN");
             
-            INSERT INTO ventas (id_cliente,id_coche,fecha_de_compra) VALUES (1,3,'2017-01-28'),
+            INSERT INTO venta (id_cliente,id_coche,fecha_de_compra) VALUES (1,3,'2017-01-28'),
             (7,6,'2022-05-10'),
             (9,2,'2015-03-20'),
             (15,8,'2020-05-03'),

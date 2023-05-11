@@ -1,15 +1,19 @@
 package dam.tema9.concesionario;
 
-import java.util.Date;
 
-public class Ventas {
+
+public class Venta {
 	private int id;
 	private int idCliente;
 	private int idCoche;
-	private Date fechaDeCompra;
+	private java.sql.Date fechaDeCompra;
 	
-	public Ventas(int id, int idCliente, int idCoche, Date fechaDeCompra) {
+	public Venta(int id) {
 		this.id = id;
+	}
+	
+	public Venta(int id, int idCliente, int idCoche, java.sql.Date fechaDeCompra) {
+		this(id);
 		this.idCliente = idCliente;
 		this.idCoche = idCoche;
 		this.fechaDeCompra = fechaDeCompra;
@@ -39,11 +43,11 @@ public class Ventas {
 		this.idCoche = idCoche;
 	}
 
-	public Date getFechaDeCompra() {
+	public java.sql.Date getFechaDeCompra() {
 		return fechaDeCompra;
 	}
 
-	public void setFechaDeCompra(Date fechaDeCompra) {
+	public void setFechaDeCompra(java.sql.Date fechaDeCompra) {
 		this.fechaDeCompra = fechaDeCompra;
 	}
 
