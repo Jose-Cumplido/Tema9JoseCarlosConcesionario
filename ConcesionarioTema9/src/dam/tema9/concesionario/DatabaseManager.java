@@ -139,6 +139,31 @@ public class DatabaseManager {
 	}
 	
 	/**
+	 * actualiza un cliente en la base de datos
+	 * @param cliente cliente que se va a actualizar
+	 * @return True si se consigue actualizar el cliente
+	 */
+	public boolean updateCliente(Cliente cliente) {
+		boolean updated = false;
+		String sqlConsult="";
+		try {
+
+			if(this.pStatement.isClosed()) return false;
+			
+			sqlConsult = "UPDATE drug SET ?='" + cliente.getNombre() +
+					"',?='" + cliente.getApellidouno()+ "',?='" + cliente.getApellidodos()+
+					"',?='" + cliente.getEmail()+"' WHERE id=" + cliente.getId();
+
+			updated= (this.pStatement.executeUpdate(sqlConsult, new String[] {"nombre",
+					"apellidouno","apellidodos","email"}))>0;
+					
+		}catch(SQLException e) {
+			return updated;
+		}	
+		return updated;
+	}
+	
+	/**
 	 * Añade un nuevo cliente a la base de datos
 	 * @param cliente cliente que se va a añadir
 	 * @return True si se consigue añadir el nuevo cliente
@@ -293,6 +318,32 @@ public class DatabaseManager {
 	}
 	
 	/**
+	 * actualiza un coche en la base de datos
+	 * @param coche coche que se va a actualizar
+	 * @return True si se consigue actualizar el coche
+	 */
+	public boolean updateCoche(Coche coche) {
+		boolean updated = false;
+		String sqlConsult="";
+		try {
+
+			if(this.pStatement.isClosed()) return false;
+			
+			sqlConsult = "UPDATE drug SET ?='" + coche.getModelo() +
+					"',?='" + coche.getPrecio() + "',?='" + coche.getFabricante() + "',?='" + coche.getAnio()+
+					"',?='"+ coche.getKm() + "',?='" + coche.getMatricula()+
+					"' WHERE id=" + coche.getId();
+
+			updated= (this.pStatement.executeUpdate(sqlConsult, new String[] {"modelo",
+					"precio","fabricante","anio","km","matricula"}))>0;
+					
+		}catch(SQLException e) {
+			return updated;
+		}	
+		return updated;
+	}
+	
+	/**
 	 * Añade un nuevo coche a la base de datos
 	 * @param coche coche que se va a añadir
 	 * @return True si se consigue añadir el nuevo coche
@@ -442,6 +493,32 @@ public class DatabaseManager {
 			e.printStackTrace();
 		}
 		return ventas;
+	}
+	
+	/**
+	 * actualiza una venta en la base de datos
+	 * @param venta venta que se va a actualizar
+	 * @return True si se consigue actualizar la venta
+	 */
+	public boolean updateVenta(Venta venta) {
+		boolean updated = false;
+		String sqlConsult="";
+		try {
+
+			if(this.pStatement.isClosed()) return false;
+			
+			sqlConsult = "UPDATE drug SET ?='" + venta.getIdCliente() +
+					"',?='" + venta.getIdCoche() + "',?='" + venta.getFechaDeCompra() +
+					"' WHERE id=" + venta.getId();
+
+			
+			updated= (this.pStatement.executeUpdate(sqlConsult, new String[] {"id_cliente",
+					"id_coche","fecha_de_compra"}))>0;
+					
+		}catch(SQLException e) {
+			return updated;
+		}	
+		return updated;
 	}
 	
 	/**

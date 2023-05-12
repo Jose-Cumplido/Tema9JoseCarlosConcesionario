@@ -27,15 +27,14 @@ public class Test {
 			ventas.stream().forEach(b->System.out.println(b));
 
 			//Prueba apartado 2-4
-
+			Venta in = new Venta(2,1, 2,new java.sql.Date(2019-01-03));
+			databaseManager.updateVenta(in);
 			//Prueba apartado 2-5
 			Venta insert = new Venta(6,1, 2,new java.sql.Date(2019-01-03));
 			databaseManager.addVenta(insert);
-			ventas.stream().forEach(b->System.out.println(b));
 			
 			//Prueba apartado 2-6
 			databaseManager.deleteVenta(5);
-			ventas.stream().forEach(b->System.out.println(b));
 		}
 
 	}
