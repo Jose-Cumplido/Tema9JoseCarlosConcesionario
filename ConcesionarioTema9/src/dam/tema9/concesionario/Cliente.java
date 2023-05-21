@@ -6,7 +6,7 @@ public class Cliente {
 	private String apellidouno;
 	private String apellidodos;
 	private String email;
-	
+
 	public Cliente(int id, String nombre, String apellidouno, String apellidodos, String email) {
 		this.id = id;
 		this.nombre = nombre;
@@ -49,5 +49,5 @@ public class Cliente {
 		return "Cliente [id=" + id + ", nombre=" + nombre + ", apellidouno=" + apellidouno + ", apellidodos="
 				+ apellidodos + ", email=" + email + "]";
 	}
-	
+
 }

@@ -7,11 +7,11 @@ public class Venta {
 	private int idCliente;
 	private int idCoche;
 	private java.sql.Date fechaDeCompra;
-	
+
 	public Venta(int id) {
 		this.id = id;
 	}
-	
+
 	public Venta(int id, int idCliente, int idCoche, java.sql.Date fechaDeCompra) {
 		this(id);
 		this.idCliente = idCliente;
@@ -56,5 +56,5 @@ public class Venta {
 		return "Ventas [id=" + id + ", idCliente=" + idCliente + ", idCoche=" + idCoche + ", fechaDeCompra="
 				+ fechaDeCompra + "]";
 	}
-	
+
 }
