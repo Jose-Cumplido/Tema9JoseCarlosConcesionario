@@ -3,7 +3,7 @@ package dam.tema9.concesionario;
 import org.eclipse.jdt.annotation.NonNull;
 
 /**
- * Clase para ordenar por columnas
+ * Clase para ordenar consultas por columnas
  * @author cumpli
  * @version 1.0
  */

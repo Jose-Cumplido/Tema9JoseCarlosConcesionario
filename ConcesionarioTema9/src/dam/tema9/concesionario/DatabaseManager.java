@@ -22,7 +22,7 @@ public class DatabaseManager {
 	public DatabaseManager(@NonNull DatabaseConnection connection) {
 		this.databaseConnection = connection;
 	}
-	// METODOS PARA TABALA CLIENTE
+	// METODOS PARA TABLA CLIENTE
 
 	/**
 	 * Metodo para listar todo el listado de la tabla cliete
@@ -255,7 +255,7 @@ public class DatabaseManager {
 		return deleted;			
 	}
 
-	// METODOS PARA TABALA COCHE
+	// METODOS PARA TABLA COCHE
 
 	/**
 	 * Metodo para listar todo el listado de la tabla coche
@@ -495,7 +495,7 @@ public class DatabaseManager {
 		return deleted;			
 	}
 
-	// METODOS PARA TABALA VENTAS
+	// METODOS PARA TABLA VENTAS
 
 	/**
 	 * Metodo para listar todo el listado de la tabla ventas
