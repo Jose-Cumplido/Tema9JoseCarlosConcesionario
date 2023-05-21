@@ -20,7 +20,7 @@ Todos los métodos que modifican datos deben devolver algo.
 
     1. (ce: d,f) Se debe poder consultar los datos de cualquiera de las tablas de la bbdd
     2. (ce: d,f) Se debe poder filtrar los datos de cualquiera de las tablas de la bbdd, al menos por 2 campos
-    3.(ce: d,f) Se pueden obtener los datos de una consulta de manera ordenada por alguno de los campos seleccionados
+    3. (ce: d,f) Se pueden obtener los datos de una consulta de manera ordenada por alguno de los campos seleccionados
     4. (ce: e) Se debe poder modificar cualquiera de los registros de una tabla
     5. (ce: c) Se debe poder añadir nuevos registros a una tabla, de uno en uno o varios
     6. (ce: e) Se debe poder eliminar registros de una tabla, de uno en uno o varios 
